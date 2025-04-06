@@ -1,5 +1,4 @@
 use ndarray::Array2;
-use ndarray::array;
 
 /// Naive matrix multiplication for 2D arrays.
 pub fn matmul(x1: Array2<f64>, x2: Array2<f64>) -> Array2<f64> {
@@ -28,6 +27,7 @@ pub fn matmul(x1: Array2<f64>, x2: Array2<f64>) -> Array2<f64> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use ndarray::array;
 
     #[test]
     fn test_matmul_square() {
